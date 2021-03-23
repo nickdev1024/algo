@@ -45,6 +45,18 @@ public class Util {
         return true;
     }
 
+    public void printArray(int[] arr) {
+        if (arr == null || arr.length <= 0) {
+            return;
+        }
+        int len = arr.length;
+        System.out.print(arr[0]);
+        for (int i = 1; i < len; i++) {
+            System.out.print(" " + arr[i]);
+        }
+        System.out.println();
+    }
+
     static public void swap(int[] arr, int i, int j) {
         if (i == j || arr == null || arr.length <= 1) {
             return;
